@@ -40,7 +40,8 @@ jobs:
       # BUILD_PATH: subfolder
       DATABASE_ID: ${{ secrets.DATABASE_ID }}
       NOTION_API_SECRET: ${{ secrets.NOTION_API_SECRET }}
-      NODE_VERSION: $${{ vars.NODE_VERSION }}    
+      NODE_VERSION: $${{ vars.NODE_VERSION }}
+      PUBLIC_GA_TRACKING_ID: $${{ vars.PUBLIC_GA_TRACKING_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
